@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/tprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#333"
+
+
+            android:text="TotalPrice"
+            />
+        <TextView
+            android:id="@+id/todate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#333"
+            android:paddingLeft="20dp"
+            android:layout_toRightOf="@+id/tprice"
+
+            android:text="Order Date"
+            />
+        <TextView
+            android:id="@+id/tddate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/todate"
+            android:textColor="#333"
+            android:paddingLeft="20dp"
+
+
+            android:text="Deliver Date"
+            />
+        <TextView
+            android:id="@+id/tstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tddate"
+            android:textColor="#333"
+            android:paddingLeft="20dp"
+
+            android:text="Status"
+            />
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

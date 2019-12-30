@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+
+        <TextView
+            android:id="@+id/txtDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Details  : "
+             />
+
+        <TextView
+            android:id="@+id/FieldName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDetail"
+            android:paddingTop="20dp"
+            android:text="Name"
+            android:paddingLeft="30dp"/>
+
+        <TextView
+            android:id="@+id/FieldQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDetail"
+
+            android:layout_toRightOf="@id/FieldName"
+            android:paddingTop="20dp"
+            android:text="Quantity"
+            android:paddingLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/FieldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDetail"
+
+            android:layout_toRightOf="@id/FieldQty"
+            android:paddingTop="20dp"
+
+            android:paddingLeft="50dp"
+
+            android:text="Price" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_below="@+id/relative" />
+
+
+    <include layout="@layout/fab_menu" />
+
+
+</RelativeLayout>

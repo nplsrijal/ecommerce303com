@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical"
+        android:id="@+id/relative">
+        <TextView
+            android:id="@+id/txtimpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:text="If you want to Change delivery address then,fill the form below"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/address"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:hint="Your Address Optional"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp"
+
+            android:layout_marginTop="30dp"
+            android:hint="Your City Optional"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/landmark"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp"
+
+            android:layout_marginTop="30dp"
+            android:hint="Nearest landmark Optional"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/numopt"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp"
+
+            android:layout_marginTop="30dp"
+            android:hint="Contact Number Optional"
+            />
+        <TextView
+            android:id="@+id/txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingLeft="20dp"
+
+            android:layout_marginTop="30dp"
+            android:hint="Order Summary"/>
+
+        <Button
+            android:id="@+id/btncheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/loginbutton_selector"
+            android:padding="3dp"
+            android:textColor="#009688"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+
+            android:text="Confirm Checkout"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>
